@@ -18,12 +18,13 @@ class IngestionHelper:
             return default
         elif value is None:
             raise ValueError(f"Environment variable '{var_name}' is not set and no default value was provided.")
-    
+
         if json_decode:
             try:
                 return json.loads(value)
             except json.JSONDecodeError as e:
                 raise ValueError(f"Error decoding JSON for environment variable '{var_name}': {e}")
+        
         return value
 
     @classmethod
@@ -72,6 +73,8 @@ class IngestionHelper:
 
         # Step 3: Save the scraped documents to files
         cls.save_documents_to_files(documents, url_doc_names, files_loc)
+
+
 
 ### The script is designed to be run as a standalone program. 
 ### When executed, it will invoke the main method of the IngestionHelper class, 

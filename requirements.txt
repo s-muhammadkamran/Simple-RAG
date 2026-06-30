@@ -1,10 +1,15 @@
+# pip install \
+    # ipykernel langchain langchain-community langchain-openai \
+    # langchain-chroma langchain-text-splitters langchainhub \
+    # chromadb python-dotenv 
 ipykernel
 langchain
 langchain-community
-langchain-openai
-langchain-chroma
-langchain-text-splitters
-langchainhub
+langchain-openai # langchain_openai
+langchain-chroma # langchain_chroma
+langchain-text-splitters # langchain_text_splitters
+langsmith 
+langchainhub #superseded by langsmith
 chromadb
-dotenv
+python-dotenv #dotenv
 beautifulsoup4

@@ -1,0 +1,9 @@
+USER_AGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+
+TEST_URL_TO_SCRAPE=https://books.toscrape.com/
+
+URL_DOC_NAMES=["Microsoft", "Apple", "Google", "Amazon", "Facebook", "Tesla", "Netflix", "IBM", "Intel", "Samsung"]
+URL_LIST=["https://en.wikipedia.org/wiki/Microsoft", "https://en.wikipedia.org/wiki/Apple_Inc.", "https://en.wikipedia.org/wiki/Google", "https://en.wikipedia.org/wiki/Amazon_(company)", "https://en.wikipedia.org/wiki/Facebook", "https://en.wikipedia.org/wiki/Tesla,_Inc.", "https://en.wikipedia.org/wiki/Netflix", "https://en.wikipedia.org/wiki/IBM", "https://en.wikipedia.org/wiki/Intel", "https://en.wikipedia.org/wiki/Samsung_Electronics"]
+FILE_PATH=docs
+
+OPEN_AI_API_KEY=Use Your Own OPEN_AI_API_KEY

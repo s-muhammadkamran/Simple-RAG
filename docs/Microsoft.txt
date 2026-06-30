@@ -581,12 +581,12 @@ Microsoft
 
 
 
-163 languages
+164 languages
 
 
 
 
-AfrikaansAlemannischአማርኛAragonésÆngliscالعربيةالدارجةمصرىAsturianuAzərbaycancaتۆرکجهБашҡортсаBasa BaliBoarischБеларуская (тарашкевіца)БеларускаяBetawiБългарскиभोजपुरीပအိုဝ်ႏဘာႏသာႏবাংলাBrezhonegBosanskiCatalà閩東語 / Mìng-dĕ̤ng-ngṳ̄CebuanoکوردیČeštinaCymraegDanskDeutschZazakiދިވެހިބަސްΕλληνικάEsperantoEspañolEestiEuskaraEstremeñuفارسیSuomiVõroNa Vosa VakavitiFrançaisFryskGaeilge贛語GalegoગુજરાતીHausa客家語 / Hak-kâ-ngîעבריתहिन्दीHrvatskiKreyòl ayisyenMagyarՀայերենInterlinguaJaku IbanBahasa IndonesiaIlokanoIdoÍslenskaItaliano日本語La .lojban.JawaქართულიQaraqalpaqshaTaqbaylitGĩkũyũҚазақшаភាសាខ្មែរಕನ್ನಡ한국어کٲشُرKurdîКыргызчаLatinaLigureLombardLingálaລາວLietuviųLatviešuमैथिलीBasa BanyumasanMāoriMinangkabauМакедонскиമലയാളംМонголဘာသာမန်मराठीBahasa MelayuMaltiမြန်မာဘာသာمازِرونیPlattdüütschनेपालीनेपाल भाषाNederlandsNorsk nynorskNorsk bokmålߒߞߏOccitanଓଡ଼ିଆਪੰਜਾਬੀPolskiPiemontèisپنجابیپښتوPortuguêsRuna SimiRomânăРусскийРусиньскыйसंस्कृतम्Саха тылаᱥᱟᱱᱛᱟᱲᱤSicilianuScotsسنڌيSrpskohrvatski / српскохрватскиတႆးසිංහලSimple EnglishSlovenčinaSlovenščinaSoomaaligaShqipСрпски / srpskiSundaSvenskaKiswahiliꠍꠤꠟꠐꠤŚlůnskiதமிழ்తెలుగుТоҷикӣไทยTürkmençeTagalogToki ponaTürkçeТатарча / tatarçaئۇيغۇرچە / UyghurcheУкраїнськаاردوOʻzbekcha / ўзбекчаVènetoTiếng ViệtWest-VlamsWalonWinaray吴语მარგალურიייִדישYorùbá文言閩南語 / Bân-lâm-gí粵語中文
+AfrikaansAlemannischአማርኛAragonésÆngliscالعربيةالدارجةمصرىAsturianuAzərbaycancaتۆرکجهБашҡортсаBasa BaliBoarischБеларуская (тарашкевіца)БеларускаяBetawiБългарскиभोजपुरीပအိုဝ်ႏဘာႏသာႏবাংলাBrezhonegBosanskiCatalà閩東語 / Mìng-dĕ̤ng-ngṳ̄CebuanoکوردیČeštinaCymraegDanskDeutschZazakiދިވެހިބަސްΕλληνικάEsperantoEspañolEestiEuskaraEstremeñuفارسیSuomiVõroNa Vosa VakavitiFrançaisFryskGaeilge贛語GalegoગુજરાતીHausa客家語 / Hak-kâ-ngîעבריתहिन्दीHrvatskiKreyòl ayisyenMagyarՀայերենInterlinguaJaku IbanBahasa IndonesiaInterlingueIlokanoIdoÍslenskaItaliano日本語La .lojban.JawaქართულიQaraqalpaqshaTaqbaylitGĩkũyũҚазақшаភាសាខ្មែរಕನ್ನಡ한국어کٲشُرKurdîКыргызчаLatinaLigureLombardLingálaລາວLietuviųLatviešuमैथिलीBasa BanyumasanMāoriMinangkabauМакедонскиമലയാളംМонголဘာသာမန်मराठीBahasa MelayuMaltiမြန်မာဘာသာمازِرونیPlattdüütschनेपालीनेपाल भाषाNederlandsNorsk nynorskNorsk bokmålߒߞߏOccitanଓଡ଼ିଆਪੰਜਾਬੀPolskiPiemontèisپنجابیپښتوPortuguêsRuna SimiRomânăРусскийРусиньскыйसंस्कृतम्Саха тылаᱥᱟᱱᱛᱟᱲᱤSicilianuScotsسنڌيSrpskohrvatski / српскохрватскиတႆးසිංහලSimple EnglishSlovenčinaSlovenščinaSoomaaligaShqipСрпски / srpskiSundaSvenskaKiswahiliꠍꠤꠟꠐꠤŚlůnskiதமிழ்తెలుగుТоҷикӣไทยTürkmençeTagalogToki ponaTürkçeТатарча / tatarçaئۇيغۇرچە / UyghurcheУкраїнськаاردوOʻzbekcha / ўзбекчаVènetoTiếng ViệtWest-VlamsWalonWinaray吴语მარგალურიייִדישYorùbá文言閩南語 / Bân-lâm-gí粵語中文
 
 Edit links
 
@@ -3733,7 +3733,7 @@ Microsoft
 
 
 
-163 languages
+164 languages
 
 
 Add topic

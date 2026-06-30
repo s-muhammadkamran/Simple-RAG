@@ -3,6 +3,7 @@ import json
 import os
 from pathlib import Path
 from web_scraper import WebScraper
+from env_var_helper import EnvVarHelper
 
 load_dotenv()
 
@@ -11,24 +12,27 @@ load_dotenv()
 ### It includes methods to read environment variables with optional JSON 
 ### decoding and to save scraped documents to specified file locations.
 class IngestionHelper:
+    ### The main method orchestrates the entire process of reading environment variables, 
+    ### scraping documents from URLs, and saving them to files. It first reads the URLs and
+    ### document names from environment variables, then uses the WebScraper class to scrape the
+    ### documents, and finally saves the scraped documents to the specified file location.
     @classmethod
-    def read_env_variable(cls, var_name, default=None, json_decode=False):
-        value = os.getenv(var_name)
-        if value is None and default is not None:
-            return default
-        elif value is None:
-            raise ValueError(f"Environment variable '{var_name}' is not set and no default value was provided.")
-
-        if json_decode:
-            try:
-                return json.loads(value)
-            except json.JSONDecodeError as e:
-                raise ValueError(f"Error decoding JSON for environment variable '{var_name}': {e}")
+    def ingest_data(cls):
+        # Step 1: Read the URLs and document names from environment variables
+        url_doc_names = EnvVarHelper.read_env_variable("URL_DOC_NAMES", json_decode=True)
+        url_list = EnvVarHelper.read_env_variable("URL_LIST", json_decode=True)
+        files_loc = os.path.join(os.getcwd(), EnvVarHelper.read_env_variable("FILE_PATH", "docs"))    
         
-        return value
+        # Step 2: Scrape the documents from the provided URLs
+        scraper = WebScraper(url_list)
+        documents = scraper.scrape()
+        print(f"Scraped {len(documents)} documents. Saving to {files_loc} folder...")
+
+        # Step 3: Save the scraped documents to files
+        cls._save_documents_to_files(documents, url_doc_names, files_loc)    
 
     @classmethod
-    def save_documents_to_files(cls, documents, doc_names, files_loc):
+    def _save_documents_to_files(cls, documents, doc_names, files_loc):
         if len(documents) != len(doc_names):
             print("Warning: The number of documents scraped does not match the number of document names provided.")
             print(f"Number of documents scraped: {len(documents)}")
@@ -55,30 +59,10 @@ class IngestionHelper:
             except OSError as e:
                 print(f"Error writing document {doc_names[i]}.txt: {e}")
 
-    ### The main method orchestrates the entire process of reading environment variables, 
-    ### scraping documents from URLs, and saving them to files. It first reads the URLs and
-    ### document names from environment variables, then uses the WebScraper class to scrape the
-    ### documents, and finally saves the scraped documents to the specified file location.
-    @classmethod
-    def main(cls):
-        # Step 1: Read the URLs and document names from environment variables
-        url_doc_names = cls.read_env_variable("URL_DOC_NAMES", json_decode=True)
-        url_list = cls.read_env_variable("URL_LIST", json_decode=True)
-        files_loc = os.path.join(os.getcwd(), cls.read_env_variable("FILE_PATH", "docs"))    
-        
-        # Step 2: Scrape the documents from the provided URLs
-        scraper = WebScraper(url_list)
-        documents = scraper.scrape()
-        print(f"Scraped {len(documents)} documents. Saving to {files_loc} folder...")
-
-        # Step 3: Save the scraped documents to files
-        cls.save_documents_to_files(documents, url_doc_names, files_loc)
-
-
 
 ### The script is designed to be run as a standalone program. 
-### When executed, it will invoke the main method of the IngestionHelper class, 
+### When executed, it will invoke the ingest_data method of the IngestionHelper class, 
 ### which orchestrates the entire process of reading environment variables, 
 ### scraping documents from URLs, and saving them to files.
 if __name__ == "__main__":
-    IngestionHelper.main()
+    IngestionHelper.ingest_data()
